@@ -13,6 +13,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        sans: "IntegralCF, sans-serif",
+        raleway: ["Raleway", "sans-serif"], // Use "font-raleway" for Raleway
+        absans: ["ABSans", "sans-serif"], // Use "font-ABSans" for ABSans
+        aenik: ["AenikPro", "sans-serif"], // Use "font-AenikPro" for AenikPro
+      },
     },
   },
   plugins: [],
