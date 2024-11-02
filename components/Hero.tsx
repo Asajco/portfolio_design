@@ -82,17 +82,30 @@ const Hero: React.FC<IHero> = (props) => {
     };
   }, []);
 
+  function onLoad(spline: any) {
+    const obj = spline.findObjectByName("Particles");
+    console.log(obj);
+    if (obj && window.innerWidth < 768) {
+      obj.scale.set(0.5, 0.5, 0.5);
+      obj.position.set(350, -200, -400);
+    } else {
+      if (obj) {
+        obj.scale.set(1, 1, 1);
+      }
+    }
+  }
+
   return (
     <div
       ref={containerRef}
-      className={`flex flex-col relative justify-start items-start custom-gradient w-screen h-screen p-0 ${className}`}
+      className={`flex flex-col  relative justify-start items-start custom-gradient w-screen h-screen p-0 ${className}`}
     >
       <div className="section1">
         <h1
           className="font-sans font-light w-screen fixed  lg:mt-[3rem] xl:mt-[0rem]  text-[3.25rem] sm:text-[6rem] md:text-[7.5rem] lg:text-[10rem] xl:text-[12rem] 2xl:text-[15rem] text-[#000000] z-50 pl-[3rem]"
           ref={nameRef}
         >
-          <p>Jakub</p>
+          <p className="mt-[3rem] sm:mt-[0rem]">Jakub</p>
           <p className="md:-mt-[4rem] 2xl:mt-[-8rem]">Petergac</p>
           <p className="text-[2rem] mt-[4rem] md:text-[2.25rem] xl:text-[3.9rem]  2xl 3xl:mt-[10rem]">
             <div className="flex flex-col md:flex-row md:gap-[1rem]">
@@ -106,9 +119,13 @@ const Hero: React.FC<IHero> = (props) => {
 
       <React.Suspense fallback={<p>Loading Spline...</p>}>
         <LazySpline
-          scene="https://prod.spline.design/Wye2-YcV6YBnK3Aq/scene.splinecode"
-          className="absolute top-0 left-0 h-screen z-0  scale-100"
+          scene="https://prod.spline.design/j68fnJWp2hiwWSMo/scene.splinecode"
+          className="fixed top-0 left-0 h-[100dvh] z-0   scale-100 "
+          style={{
+            background: "linear-gradient(135deg, #FFFFFF, #E0E0E0, #B0B0B0)", // Custom gradient colors
+          }}
           onLoadStart={(e) => console.log("onLoadStart", e)}
+          onLoad={(spline) => onLoad(spline)}
           // onLoad={() => {
           //   console.log("onLoad");
           //   setTimeout(() => {

@@ -39,7 +39,6 @@ export default function Home() {
           end: "+=3000",
           scrub: true,
           pin: true,
-          markers: true,
         },
       }
     );

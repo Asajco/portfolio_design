@@ -29,7 +29,7 @@ const MyWork = () => {
     {
       title: "Fulltime Frontend Developer",
       place: "Showmore, s. r. o.",
-      description: "Worked on large-scale projects.",
+      description: "Worked on large scale projects.",
       year: "Ongoing",
     },
   ];
@@ -51,7 +51,7 @@ const MyWork = () => {
       title: "Masters Degree",
       description: "Major in Computer Science",
       place: "Danish Technical University",
-      year: "2024 - present",
+      year: "Ongoing",
     },
   ];
 
@@ -71,7 +71,6 @@ const MyWork = () => {
               duration: 1,
               ease: "power2.out",
               scrollTrigger: {
-                markers: true,
                 trigger: item,
                 start: "top 80%",
                 toggleActions: "play none none reverse",
@@ -94,7 +93,7 @@ const MyWork = () => {
               ease: "power2.out",
               scrollTrigger: {
                 trigger: item,
-                markers: true,
+
                 start: "top 80%",
                 toggleActions: "play none none reverse",
               },
@@ -117,8 +116,8 @@ const MyWork = () => {
   }, []);
 
   return (
-    <div className="w-full bg-white h-auto flex flex-col items-center mt-[10rem] relative">
-      <h1 className="font-sans text-[4.5rem] text-center md:text-[6rem] xl:text-[7rem] 2xl:text-[12rem] mb-[3rem] md:mb-[5rem]">
+    <div className="w-full  h-auto flex flex-col items-center mt-[10rem] relative">
+      <h1 className="font-sans text-[4.25rem] text-center md:text-[6rem] xl:text-[7rem] 2xl:text-[12rem] mb-[3rem] md:mb-[5rem]">
         My Journey
       </h1>
       <div

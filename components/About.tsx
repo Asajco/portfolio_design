@@ -68,7 +68,7 @@ const About = () => {
   return (
     <div
       ref={aboutRef}
-      className="w-full min-h-screen flex gap-3 flex-col justify-center xl:justify-start items-center px-4 relative bg-white"
+      className="w-full min-h-screen flex gap-[5rem] flex-col justify-center xl:justify-start items-center px-4 relative bg-transparent"
       // style={{
       //   backgroundImage:
       //     "linear-gradient(to bottom, #000000, #3b1820, #752433, #b1323f, #ef4444)",
@@ -85,19 +85,18 @@ const About = () => {
       /> */}
       <p
         ref={headingRef}
-        className="text-[5rem] sm:text-[7rem] md:text-[9rem] 2xl:text-[13rem] mt-[3rem] xl:mt-[9rem] font-sans text-black mb-8 text-center"
+        className="text-[5rem] sm:text-[7rem] md:text-[9rem] 2xl:text-[13rem] mt-[3rem] xl:mt-[5rem] font-sans text-black mb-8 text-center"
       >
         Who am I?
       </p>
       <div className="flex self-end  ">
         <p
           ref={paragraphRef}
-          className="text-black text-[1.5rem] lg:text-[2.5rem] xl:text-[3.15rem] text-center mb-4 px-[1rem]"
+          className="text-black font-aenik text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3.15rem] 3xl:w-[80%] mx-auto self-center text-center mb-4 px-[1rem]"
         >
-          I am a 23-year-old web developer based in Slovakia with almost two
-          years of professional experience. Throughout my career, I have worked
-          on various projects, improving my skills in a wide range of
-          technologies.
+          I am a 23 year old developer based in Slovakia with almost two years
+          of professional experience. Throughout my career, I have worked on
+          various projects, improving my skills in a wide range of technologies.
         </p>
       </div>
       {/* Add more text elements with refs here if needed */}

@@ -31,6 +31,7 @@ const Projects = () => {
       scale: 0.4,
       yPercent: 100, // Start images below the viewport
       opacity: 1,
+      duration: 2,
     });
 
     // Title intro animation before scroll
@@ -56,7 +57,7 @@ const Projects = () => {
     // Animate each image
     images.forEach((image, index) => {
       if (index > 0) {
-        tl.to({}, { duration: 0.5 }); // Add small delay between images
+        tl.to({}, { duration: 0.9 }); // Add small delay between images
       }
 
       tl.to(image, {
@@ -64,8 +65,7 @@ const Projects = () => {
         yPercent: 0,
         borderRadius: "1rem",
         opacity: 1,
-        duration: 3,
-        ease: "power2.out",
+        duration: 5,
       });
     });
 
@@ -77,7 +77,7 @@ const Projects = () => {
   return (
     <div
       ref={containerRef}
-      className="w-screen h-screen relative bg-white overflow-hidden"
+      className="w-screen h-screen relative  overflow-hidden"
     >
       {/* Centered Title */}
       <h1
@@ -97,11 +97,11 @@ const Projects = () => {
         >
           <div className="absolute h-full  flex flex-col  md:items-end md:justify-between   z-[2]">
             <Link href="https://www.showmore.cz/" target="_blank">
-              <p className="text-[3rem]  md:mb-0 sm:text-[5rem] md:text-[7rem] px-[2rem] xl:text-[10rem] font-sans text-white z-[2]">
+              <p className="text-[3rem] mb-[2rem]  md:mb-0 sm:text-[5rem] md:text-[7rem] px-[2rem] xl:text-[10rem] font-sans text-white z-[2]">
                 Showmore
               </p>
             </Link>
-            <p className="font-raleway text-[1.5rem]  px-[1rem] mb-[1rem] text-left self-start lg:w-2/3 tracking-[0.8px] text-white xl:px-[2rem] z-[2] w-full  xl:py-[2rem] ">
+            <p className="font-aenik  text-[1.5rem]  px-[1rem] mb-[1rem] text-left self-start lg:w-2/3  3xl:w-1/3 tracking-[0.8px] text-white xl:px-[2rem] z-[2] w-full  xl:py-[2rem] ">
               As a member of the Showmore team, I contributed to creating a
               visually engaging web portfolio. My primary focus was on the
               visual aspects of the code, ensuring the design was captivating
@@ -126,12 +126,12 @@ const Projects = () => {
           style={{ zIndex: 2 }}
         >
           <div className="absolute h-full  flex flex-col  md:items-end md:justify-between   z-[2]">
-            <Link href="https://www.showmore.cz/" target="_blank">
-              <p className="text-[3rem]  md:mb-0 sm:text-[5rem] md:text-[7rem] px-[2rem] xl:text-[10rem] font-sans text-white z-[2]">
+            <Link href="https://becode.sk/" target="_blank">
+              <p className="text-[3rem] mb-[2rem] md:mb-0 sm:text-[5rem] md:text-[7rem] px-[2rem] xl:text-[10rem] font-sans text-white z-[2]">
                 BeCode
               </p>
             </Link>
-            <p className="font-raleway text-[1.5rem]  px-[1rem] mb-[1rem] text-left self-start lg:w-2/3 tracking-[0.8px] text-white xl:px-[2rem] z-[2] w-full  xl:py-[2rem] ">
+            <p className="font-aenik text-[1.5rem]  px-[1rem] mb-[1rem] text-left self-start lg:w-2/3 3xl:w-1/3 tracking-[0.8px] text-white xl:px-[2rem] z-[2] w-full  xl:py-[2rem] ">
               As a member of the BeCode team, I contributed to developing a CRM
               application specifically designed for a car dealership and
               restaurant ordering system. My primary focus was on delivering a
@@ -154,13 +154,13 @@ const Projects = () => {
           className="absolute inset-0 w-full h-full"
           style={{ zIndex: 3 }}
         >
-          <div className="absolute h-full  flex flex-col  md:items-end md:justify-between   z-[2]">
-            <Link href="https://www.showmore.cz/" target="_blank">
-              <p className="text-[3rem]  md:mb-0 sm:text-[5rem] md:text-[7rem] px-[2rem] xl:text-[10rem] font-sans text-white z-[2]">
+          <div className="absolute h-full w-full  flex flex-col  md:items-end md:justify-between   z-[2]">
+            <Link href="https://www.wisebets.sk/" target="_blank">
+              <p className="text-[3rem] mb-[2rem] md:mb-0 sm:text-[5rem] md:text-[7rem] px-[2rem] xl:text-[10rem] font-sans text-white z-[2]">
                 Wisebets
               </p>
             </Link>
-            <p className="font-raleway text-[1.5rem]  px-[1rem] mb-[1rem] text-left self-start lg:w-2/3 tracking-[0.8px] text-white xl:px-[2rem] z-[2] w-full  xl:py-[2rem] ">
+            <p className="font-aenik   text-[1.5rem]  px-[1rem] mb-[1rem] text-left self-start lg:w-2/3 3xl:w-1/3 tracking-[0.8px] text-white xl:px-[2rem] z-[2] w-full  xl:py-[2rem] ">
               Online market when you can buy memebership for AI generated bets.
               Developed whole aplication from scrach and designed for cliet
               needs.
@@ -181,13 +181,16 @@ const Projects = () => {
           className="absolute inset-0 w-full h-full"
           style={{ zIndex: 4 }}
         >
-          <div className="absolute h-full  flex flex-col  md:items-end md:justify-between   z-[2]">
-            <Link href="https://www.showmore.cz/" target="_blank">
-              <p className="text-[3rem]  md:mb-0 sm:text-[5rem] my-[2rem] md:my-[0] md:text-[7rem] px-[2rem] xl:text-[10rem] font-sans text-white z-[2]">
+          <div className="absolute h-full w-full  flex flex-col  md:items-end md:justify-between z-[2]">
+            <Link
+              href="https://github.com/Asajco/manageIt_demo"
+              target="_blank"
+            >
+              <p className="text-[3rem] mb-[2rem]  md:mb-0 sm:text-[5rem] md:text-[7rem] px-[2rem] xl:text-[10rem] font-sans text-white z-[2]">
                 ManageIT
               </p>
             </Link>
-            <p className="font-raleway text-[1.5rem]  px-[1rem] mb-[1rem] text-left self-start lg:w-2/3 tracking-[0.8px] text-white xl:px-[2rem] z-[2] w-full  xl:py-[2rem] ">
+            <p className="font-aenik  text-[1.5rem]  px-[1rem] mb-[1rem] text-left self-start lg:w-2/3 3xl:w-1/3 tracking-[0.8px] text-white xl:px-[2rem] z-[2] w-full  xl:py-[2rem] ">
               Simple storage management system with user authentication and
               authorization. I developed the entire application from scratch
               based on my needs from previous jobs.
