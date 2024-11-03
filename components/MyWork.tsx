@@ -110,6 +110,7 @@ const MyWork = () => {
         observer.disconnect();
       }
     });
+    //@ts-ignore
     observer.observe(containerRef.current);
 
     return () => ctx.revert();
@@ -129,6 +130,7 @@ const MyWork = () => {
           {jobs.map((item, index) => (
             <div
               key={index}
+              //@ts-ignore
               ref={(el) => (jobItemsRef.current[index] = el)}
               className="flex-none w-full max-w-[800px] h-[400px] bg-gray-100 p-4 lg:p-6 rounded-lg shadow-lg flex flex-col justify-center items-center text-center text-[1.5rem] md:text-[2rem] font-sans transition-all duration-200 ease-out hover:rounded-[30px] md:hover:rounded-[50px]"
             >
@@ -153,6 +155,7 @@ const MyWork = () => {
           {education.map((item, index) => (
             <div
               key={index}
+              //@ts-ignore
               ref={(el) => (workItemsRef.current[index] = el)}
               className="flex-none w-full  h-[400px] max-w-[800px] bg-gray-100 p-4 md:p-6 rounded-lg shadow-lg flex flex-col justify-center items-center text-center text-[1.5rem] md:text-[2rem] font-sans transition-all duration-200 ease-out hover:rounded-[30px] md:hover:rounded-[50px] z-50"
             >

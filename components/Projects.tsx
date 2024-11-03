@@ -91,6 +91,7 @@ const Projects = () => {
       <div className="relative w-screen h-screen">
         {/* Image 1 */}
         <div
+          //@ts-ignore
           ref={(el) => (imagesRef.current[0] = el)}
           className="absolute inset-0 w-screen h-screen flex "
           style={{ zIndex: 1 }}
@@ -121,6 +122,7 @@ const Projects = () => {
 
         {/* Image 2 */}
         <div
+          //@ts-ignore
           ref={(el) => (imagesRef.current[1] = el)}
           className="absolute inset-0 w-full h-full"
           style={{ zIndex: 2 }}
@@ -150,6 +152,7 @@ const Projects = () => {
 
         {/* Image 3 */}
         <div
+          //@ts-ignore
           ref={(el) => (imagesRef.current[2] = el)}
           className="absolute inset-0 w-full h-full"
           style={{ zIndex: 3 }}
@@ -177,6 +180,7 @@ const Projects = () => {
 
         {/* Image 4 */}
         <div
+          //@ts-ignore
           ref={(el) => (imagesRef.current[3] = el)}
           className="absolute inset-0 w-full h-full"
           style={{ zIndex: 4 }}

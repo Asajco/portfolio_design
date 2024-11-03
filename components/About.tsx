@@ -18,6 +18,7 @@ const About = () => {
     const ctx = gsap.context(() => {
       // Create a timeline for sequential animations when entering the component
       const tl = gsap.timeline({
+        //@ts-ignore
         scrollTrigger: {
           trigger: aboutRef.current, // Element that triggers the animation
           start: "top top", // When the top of the trigger hits the top of the viewport
