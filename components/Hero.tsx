@@ -119,7 +119,7 @@ const Hero: React.FC<IHero> = (props) => {
 
       <React.Suspense fallback={<p>Loading Spline...</p>}>
         <LazySpline
-          scene="https://prod.spline.design/j68fnJWp2hiwWSMo/scene.splinecode"
+          scene="https://prod.spline.design/Pz6t7TNFSagh4IJ0/scene.splinecode"
           className="fixed top-0 left-0 h-[100dvh] z-0   scale-100 "
           style={{
             background: "linear-gradient(135deg, #FFFFFF, #E0E0E0, #B0B0B0)", // Custom gradient colors
