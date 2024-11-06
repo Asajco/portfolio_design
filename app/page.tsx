@@ -40,7 +40,7 @@ export default function Home() {
           outerSize={25}
           outerStyle={{
             border: "2px solid #000",
-
+            background: "transparent",
             //set bg as invert of color im on
           }}
           innerStyle={{

@@ -7,26 +7,29 @@ import gmail from "../assets/icons/gmail.svg";
 
 const Header = () => {
   return (
-    <div className="fixed top-0 left-0 w-full z-[10000000000] hidden md:flex items-center justify-end gap-[3rem] h-[48px] px-[3rem] ">
+    <div className="fixed top-0 left-0 w-full z-[10000000000] hidden md:flex items-end justify-end gap-[0.5rem]  px-[3rem] mt-[1.5rem] ">
       <a
-        href="https://linkedin.com"
+        href="https://www.linkedin.com/in/jakub-peterg%C3%A1%C4%8D-050338238/"
         target="_blank"
-        className="font-raleway text-[1.5rem] border-[1px] border-black rounded-lg px-[0.5rem] mt-[2.5rem] transition-transform ease-in-out duration-200 py-[0.25rem] bg-[#ffffff81]  hover:scale-110"
+        className="font-aeniks text-[1.5rem]  px-[0.5rem]  transition-transform ease-in-out duration-200 py-[0.25rem]   hover:underline"
       >
-        <Image src={linkedin} alt="linkedin" />
+        {/* <Image src={linkedin} alt="linkedin" /> */}
+        <p>linkedin</p>
       </a>
       <a
-        href="https://linkedin.com"
+        href="https://github.com/Asajco"
         target="_blank"
-        className="font-raleway text-[1.5rem] border-[1px] border-black rounded-lg px-[0.5rem] mt-[2.5rem] transition-transform ease-in-out duration-200 py-[0.25rem] bg-[#ffffff81] hover:scale-110 "
+        className="font-aeniks text-[1.5rem]  px-[0.5rem]  transition-transform ease-in-out duration-200 py-[0.25rem]  hover:underline "
       >
-        <Image src={github} alt="github" />
+        {/* <Image src={github} alt="github" /> */}
+        <p>github</p>
       </a>
       <a
         href="mailto:petergacj@gmail.com"
-        className="font-raleway text-[1.5rem] border-[1px] border-black rounded-lg px-[0.5rem] mt-[2.5rem] transition-transform ease-in-out duration-200 py-[0.25rem] bg-[#ffffff81]  hover:scale-110"
+        className="font-aeniks text-[1.5rem]  px-[0.5rem]  transition-transform ease-in-out duration-200 py-[0.25rem]   hover:underline"
       >
-        <Image src={gmail} alt="gmail" />
+        <p>mail</p>
+        {/* <Image src={gmail} alt="gmail" /> */}
       </a>
     </div>
   );

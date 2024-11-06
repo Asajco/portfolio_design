@@ -69,7 +69,7 @@ const About = () => {
   return (
     <div
       ref={aboutRef}
-      className="w-full min-h-screen flex gap-[5rem] flex-col justify-center xl:justify-start items-center px-4 relative bg-transparent"
+      className="w-full min-h-screen flex gap-[1rem] sm:gap-[5rem] flex-col justify-center xl:justify-start items-center px-4 relative bg-transparent"
       // style={{
       //   backgroundImage:
       //     "linear-gradient(to bottom, #000000, #3b1820, #752433, #b1323f, #ef4444)",
@@ -86,11 +86,11 @@ const About = () => {
       /> */}
       <p
         ref={headingRef}
-        className="text-[5rem] sm:text-[7rem] md:text-[9rem] 2xl:text-[13rem] mt-[3rem] xl:mt-[5rem] font-sans text-black mb-8 text-center"
+        className="text-[5rem] sm:text-[7rem] md:text-[9rem] 2xl:text-[13rem] mt-[-2rem] xl:mt-[5rem] font-sans text-black mb-8 text-center"
       >
         Who am I?
       </p>
-      <div className="flex self-end  ">
+      <div className="flex self-start  ">
         <p
           ref={paragraphRef}
           className="text-black font-aenik text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] xl:text-[3.15rem] 3xl:w-[80%] mx-auto self-center text-center mb-4 px-[1rem]"

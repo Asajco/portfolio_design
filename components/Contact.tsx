@@ -75,8 +75,10 @@ const Contact = () => {
             Contact Me
           </p>
           <div className="font-aenik text-sm md:text-lg h-20 flex flex-col items-center md:items-start justify-between gap-4 md:gap-8 mt-4 md:mt-0">
-            <p>LinkedIn</p>
-            <p>petergacj@gmail.com</p>
+            <a href="https://www.linkedin.com/in/jakub-peterg%C3%A1%C4%8D-050338238/">
+              linkedin
+            </a>
+            <a href="mailto:petergacj@gmail.com">petergacj@gmail.com</a>
           </div>
         </div>
         <p className="self-center font-aenik mt-[2rem]  text-xs md:text-base">

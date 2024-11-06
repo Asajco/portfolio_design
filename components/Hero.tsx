@@ -86,8 +86,8 @@ const Hero: React.FC<IHero> = (props) => {
     const obj = spline.findObjectByName("Particles");
     console.log(obj);
     if (obj && window.innerWidth < 768) {
-      obj.scale.set(0.5, 0.5, 0.5);
-      obj.position.set(350, -200, -400);
+      obj.scale.set(0.4, 0.4, 0.4);
+      obj.position.set(20, -100, 0);
     } else {
       if (obj) {
         obj.scale.set(1, 1, 1);
@@ -102,12 +102,12 @@ const Hero: React.FC<IHero> = (props) => {
     >
       <div className="section1">
         <h1
-          className="font-sans font-light w-screen fixed  lg:mt-[3rem] xl:mt-[0rem]  text-[3.25rem] sm:text-[6rem] md:text-[7.5rem] lg:text-[10rem] xl:text-[12rem] 2xl:text-[15rem] text-[#000000] z-50 pl-[3rem]"
+          className="font-sans font-light w-screen fixed  lg:mt-[3rem] xl:mt-[0rem]  text-[3.25rem] sm:text-[6rem] md:text-[7.5rem] lg:text-[10rem] xl:text-[12rem] 2xl:text-[15rem] text-[#000000] z-50 pl-[1.5rem] md:pl-[3rem]"
           ref={nameRef}
         >
           <p className="mt-[3rem] sm:mt-[0rem]">Jakub</p>
           <p className="md:-mt-[4rem] 2xl:mt-[-8rem]">Petergac</p>
-          <p className="text-[2rem] mt-[4rem] md:text-[2.25rem] xl:text-[3.9rem]  2xl 3xl:mt-[10rem]">
+          <p className="text-[2rem] mt-[10rem] sm:mt-[4rem] md:text-[2.25rem] xl:text-[3.9rem]  2xl 3xl:mt-[10rem]">
             <div className="flex flex-col md:flex-row md:gap-[1rem]">
               <p> Developer, </p>
               <p>Engineer, </p>
